@@ -56,6 +56,12 @@ const Navbar = () => {
           alignItems: "center",
           padding: { lg: "0 20px", xs: "20px" },
           justifyContent: "space-between",
+          position: {lg: "static", xs: "fixed"},
+          top: 0,
+          left: 0,
+          zIndex: 1000,
+          background: "#F7F8FA"
+          
         }}
       >
         <Typography
@@ -96,7 +102,7 @@ const Navbar = () => {
         </Box>
 
         <Box>
-          <Stack direction="row" alignItems="center">
+          <Stack direction="row" alignItems="center" gap="20px">
             <img src={messageIcon} alt="messageIcon" className="icon-image" />
             <img
               src={notificationIcon}

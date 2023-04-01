@@ -1,9 +1,9 @@
 import { Box, Stack, Typography } from "@mui/material";
 import dotIcons from "../assets/images/dot.svg";
 import Task from "./Task";
-import plusIcon from "../assets/images/plus.svg"
+import plusIcon from "../assets/images/plus.svg";
 
-const Tasks = ({ tasks, title, backlogTask }) => {
+const Tasks = ({ tasks, title, backlogTask, backgroundColor, color }) => {
   return (
     <Box>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
@@ -11,7 +11,7 @@ const Tasks = ({ tasks, title, backlogTask }) => {
           sx={{
             display: "flex",
             alignItems: "center",
-            gap: "10px",
+            gap: "16px",
           }}
         >
           <Typography
@@ -26,18 +26,17 @@ const Tasks = ({ tasks, title, backlogTask }) => {
           </Typography>
           <Box
             sx={{
-              background: "#EAB308",
+              background: backgroundColor,
               width: "24px",
               height: "24px",
               borderRadius: "50%",
               padding: "5px 9px",
-              //   opacity: "0.2"
             }}
             className="flex-row"
           >
             <Typography
               sx={{
-                color: "#CA8A04",
+                color: color,
                 textAlign: "center",
                 fontWeight: 800,
                 lineHeight: "16px",
@@ -56,14 +55,16 @@ const Tasks = ({ tasks, title, backlogTask }) => {
           return <Task key={task.id} task={task} />;
         })}
 
-        <Box sx={{
-            backgroundColor:"#fff",
+        <Box
+          sx={{
+            backgroundColor: "#fff",
             borderRadius: "8px",
             padding: "6px",
             textAlign: "center",
             boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
-        }}>
-            <img src={plusIcon} alt="plus" />
+          }}
+        >
+          <img src={plusIcon} alt="plus" />
         </Box>
       </Box>
     </Box>

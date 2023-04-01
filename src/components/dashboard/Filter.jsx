@@ -9,6 +9,7 @@ import menu2 from "../../assets/images/menu4.svg";
 import menu3 from "../../assets/images/menu3.svg";
 import menu4 from "../../assets/images/menu5.svg";
 import menu5 from "../../assets/images/menu2.svg";
+import chevronDown from "../../assets/images/chevron-down.svg";
 
 const icons = [menu1, menu2, menu3, menu4, menu5];
 
@@ -40,6 +41,8 @@ const Filter = () => {
               gap: "10px",
               border: "1px solid #EBEEF2",
               padding: "15px 16px",
+              background: "#FAFBFC",
+              borderRadius: "8px 0px 0px 8px",
             }}
           >
             <img src={gridViewIcon} alt="grid-view" />
@@ -62,6 +65,8 @@ const Filter = () => {
               border: "1px solid #EBEEF2",
               padding: "15px 16px",
               borderLeft: "none",
+              background: "#FAFBFC",
+              borderRadius: "0px 8px 8px 0px",
             }}
           >
             <img src={listViewIcon} alt="list-view" />
@@ -95,9 +100,9 @@ const Filter = () => {
             fontSize="11px"
             color="#98A2B2"
           >
-            List View
+            Limited Access
           </Typography>
-          1
+          <img src={chevronDown} alt="down" style={{ marginLeft: "16px" }} />
         </Box>
 
         <Box

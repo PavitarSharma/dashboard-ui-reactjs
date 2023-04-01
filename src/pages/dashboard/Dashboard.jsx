@@ -34,11 +34,23 @@ const Dashboard = () => {
         }}
       >
         <LeftAnimation>
-          <Tasks title="Backlog Tasks" backlogTask={5} tasks={backlogTasks} />
+          <Tasks
+            title="Backlog Tasks"
+            backlogTask={5}
+            tasks={backlogTasks}
+            backgroundColor="rgba(234, 179, 8, 0.1)"
+            color="#CA8A04"
+          />
         </LeftAnimation>
 
         <LeftAnimation>
-          <Tasks title="To Do Tasks" backlogTask={3} tasks={todoTasks} />
+          <Tasks
+            title="To Do Tasks"
+            backlogTask={3}
+            tasks={todoTasks}
+            backgroundColor="rgba(236, 72, 153, 0.1)"
+            color="#DB2777"
+          />
         </LeftAnimation>
 
         <LeftAnimation>
@@ -46,11 +58,19 @@ const Dashboard = () => {
             title="In Process Tasks"
             backlogTask={2}
             tasks={proesssingTasks}
+            backgroundColor="rgba(168, 85, 247, 0.1)"
+            color="#9333EA"
           />
         </LeftAnimation>
 
         <LeftAnimation>
-          <Tasks title="Done" backlogTask={5} tasks={completedTasks} />
+          <Tasks
+            title="Done"
+            backlogTask={5}
+            tasks={completedTasks}
+            backgroundColor="rgba(34, 197, 94, 0.1)"
+            color="#16A34A"
+          />
         </LeftAnimation>
       </Box>
     </Box>

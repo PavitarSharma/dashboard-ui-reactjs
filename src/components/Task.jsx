@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import saveIcon from "../assets/images/save.svg";
 import shareIcon from "../assets/images/share.svg";
-import messageIcon from "../assets/images/message-icon.svg";
+import messageIcon from "../assets/images/message1.svg";
 import { tasks } from "../assets/data";
 import addIcon from "../assets/images/add-icon.svg";
 const Task = ({ task }) => {

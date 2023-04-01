@@ -1,15 +1,14 @@
 import { Box } from "@mui/material";
-import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import RightSidebar from "./components/RightSidebar";
 import Sidebar from "./components/Sidebar";
 import { useStateContext } from "./context/ContextProvider";
 import RightAnimation from "./utils/RightAnimation";
-const Dashboard = lazy(() => import("./pages/dashboard/Dashboard"));
+import Dashboard from "./pages/dashboard/Dashboard"
 
 const App = () => {
-  const { activeMenu, activeUserMenu } = useStateContext();
+  const { activeMenu } = useStateContext();
   return (
     <BrowserRouter>
       <header>
@@ -27,9 +26,12 @@ const App = () => {
             sx={{
               minWidth: { lg: "18rem", xs: "100%" },
               position: { lg: "static", xs: "fixed" },
-              overflowY: "scroll",
+              overflowY: { lg: "hidden", xs: "scroll" },
+              borderRight: "1px solid #EBEEF2",
               zIndex: { lg: 1, xs: 900 },
               height: "100%",
+           
+              top: "80px"
             }}
           >
             <Sidebar />
@@ -47,11 +49,11 @@ const App = () => {
         )}
         <main className="main">
           <Box sx={{ padding: "20px", width: "100%", flex: 2 }}>
-            <Suspense>
+  
               <Routes>
                 <Route path="/" element={<Dashboard />} />
               </Routes>
-            </Suspense>
+  
           </Box>
         </main>
 
@@ -59,12 +61,10 @@ const App = () => {
           <Box
             sx={{
               width: "5rem",
-
               right: 0,
               borderLeft: "1px solid #EBEEF2",
               minHeight: "100vh",
               display: { lg: "flex", xs: "none" },
-
               justifyContent: "center",
             }}
           >

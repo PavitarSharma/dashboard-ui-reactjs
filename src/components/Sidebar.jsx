@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <>
       {activeMenu && (
-        <Box sx={{ padding: "40px 20px", background: "#F7F8FA" }}>
+        <Box sx={{ padding: "20px 20px 80px", background: "#F7F8FA", }}>
           {/* user  */}
           <Stack
             direction="row"
@@ -135,7 +135,7 @@ const Sidebar = () => {
                       </Box>
                     </Box>
                   ))}
-                  {index == 0 && <Divider sx={{ margin: "30px 0" }} />}
+                  <Divider sx={{ margin: "40px 0" }} />
                 </Box>
               ))}
             </Box>

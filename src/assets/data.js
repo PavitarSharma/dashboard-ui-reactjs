@@ -241,12 +241,12 @@ export const tasks = [
       },
       {
         title: "Design",
-        bgColor: "#d2e1fa",
+        bgColor: "rgba(59, 130, 246, 0.1);",
         textColor: "#3B82F6",
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -275,12 +275,12 @@ export const tasks = [
       },
       {
         title: "Development",
-        bgColor: "#EC4899",
+        bgColor: "rgba(236, 72, 153, 0.1)",
         textColor: "#DB2777",
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -315,7 +315,7 @@ export const tasks = [
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -341,7 +341,7 @@ export const tasks = [
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -370,7 +370,7 @@ export const tasks = [
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -390,7 +390,7 @@ export const tasks = [
       },
       {
         title: "To Do",
-        bgColor: "#EC4899",
+        bgColor: "rgba(236, 72, 153, 0.1)",
         textColor: "#DB2777",
       },
     ],
@@ -419,7 +419,7 @@ export const tasks = [
       },
       {
         title: "Todo",
-        bgColor: "#EC4899",
+        bgColor: "rgba(236, 72, 153, 0.1)",
         textColor: "#DB2777",
       },
     ],
@@ -439,7 +439,7 @@ export const tasks = [
       },
       {
         title: "Todo",
-        bgColor: "#EC4899",
+        bgColor: "rgba(236, 72, 153, 0.1)",
         textColor: "#DB2777",
       },
     ],
@@ -464,12 +464,12 @@ export const tasks = [
       },
       {
         title: "Development",
-        bgColor: "#EC4899",
+        bgColor: "rgba(236, 72, 153, 0.1)",
         textColor: "#DB2777",
       },
       {
         title: "Backlog",
-        bgColor: "#EAB308",
+        bgColor: "rgba(234, 179, 8, 0.1)",
         textColor: "#CA8A04",
       },
     ],
@@ -498,7 +498,7 @@ export const tasks = [
       },
       {
         title: "In Process",
-        bgColor: "#A855F7",
+        bgColor: "rgba(168, 85, 247, 0.1)",
         textColor: "#9333EA",
       },
     ],
@@ -527,7 +527,7 @@ export const tasks = [
       },
       {
         title: "In Process",
-        bgColor: "#A855F7",
+        bgColor: "rgba(168, 85, 247, 0.1)",
         textColor: "#9333EA",
       },
     ],
@@ -556,7 +556,7 @@ export const tasks = [
       },
       {
         title: "Done",
-        bgColor: "#22C55E",
+        bgColor: "rgba(34, 197, 94, 0.1)",
         textColor: "#16A34A",
       },
     ],
@@ -585,7 +585,7 @@ export const tasks = [
       },
       {
         title: "Done",
-        bgColor: "#22C55E",
+        bgColor: "rgba(34, 197, 94, 0.1)",
         textColor: "#16A34A",
       },
     ],
@@ -604,7 +604,7 @@ export const tasks = [
       },
       {
         title: "Done",
-        bgColor: "#22C55E",
+        bgColor: "rgba(34, 197, 94, 0.1)",
         textColor: "#16A34A",
       },
     ],
@@ -629,7 +629,7 @@ export const tasks = [
       },
       {
         title: "Done",
-        bgColor: "#A855F7",
+        bgColor: "rgba(168, 85, 247, 0.1)",
         textColor: "#9333EA",
       },
     ],
@@ -657,7 +657,7 @@ export const tasks = [
       },
       {
         title: "Done",
-        bgColor: "#22C55E",
+        bgColor: "rgba(34, 197, 94, 0.1)",
         textColor: "#16A34A",
       },
     ],

@@ -1,22 +1,20 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const RightAnimation = ({ children }) => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.5 }}
-      variants={{
-        hidden: { opacity: 1, x: 0 },
-        visible: { opacity: 1, x: 0 },
-        
-      }}
-   
-    >
-      {children}
-    </motion.div>
+    <AnimatePresence>
+      <motion.div
+        initial={{ x: "100%" }}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        animate={{ x: 0 }}
+        exit={{ x: "-100%" }}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
