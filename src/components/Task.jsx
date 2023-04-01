@@ -5,7 +5,7 @@ import messageIcon from "../assets/images/message1.svg";
 import { tasks } from "../assets/data";
 import addIcon from "../assets/images/add-icon.svg";
 const Task = ({ task }) => {
-  console.log(task);
+
   return (
     <Box
       sx={{
